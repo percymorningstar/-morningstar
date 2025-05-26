@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+.hero {
+  height: 100vh;
+  background: url('assets/bg-mythic.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+}
+.content h1 {
+  font-size: 4rem;
+  color: #ff0000;
+  letter-spacing: 2px;
+}
+.content p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background: #cc0000;
+}
+#roundtable {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #111;
+}
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.ai-card {
+  padding: 2rem;
+  border: 2px solid #ff0000;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px #ff0000;
+}
+footer {
+  padding: 1rem;
+  background: #000;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
